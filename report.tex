@@ -3,11 +3,11 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{hyperref}
 \usepackage{makeidx}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{svg}
-\usepackage{pgfplots}
 \usepackage{subcaption}
 \usepackage{fancyhdr}
 \usepackage{float}
@@ -15,10 +15,24 @@
 \usepackage{nth}
 \usepackage{multicol}
 \usepackage{siunitx}
+\usepackage[default,scale=1.0]{opensans}
 \usepackage[margin=1in]{geometry}
 
+%% Preamble
 % Custom commands
 \newcommand{\ts}{\textsubscript}
+
+% Hyper ref
+\hypersetup{
+	colorlinks=true,
+	citecolor=black,
+	linkcolor=black,
+	filecolor=black,
+	urlcolor=blue,
+	pdftitle={APSC 210 Report - Muchen He},
+	bookmarks=true
+}
+\urlstyle{same}
 
 % Page semantics
 \pagestyle{fancy}
@@ -89,19 +103,66 @@ EA or BioWare, like many other studios or publishers exist in the market right n
 
 \subsection{Company}\label{introduction-company}
 
-BioWare is founded in 1995, is a video game studio in Edmonton, AB. Now it is a division of Electronic Arts (EA). The studio is infamous for its story-driven games with rich, branched quests including franchises such as Mass Effect and Dragon Age \cite{bioware} \cite{bioware-wiki} \cite{bioware-wiki-list}.\\
+BioWare is a game development studio founded in 1995 by three medical doctors in Edmonton, Alberta\cite{bioware-wiki}. Since the establishment, BioWare has developed numerous titles including the Mass Effect and Dragon Age franchise as well as the massive multiplier online (MMO) game Star Wars: The Old Republic. BioWare is currently developing Anthem, the upcoming game set to release in Feburary, 2019.\\
 \\
+The company is now a division of EA, which is an American video game publishing company. This allows for cross-studio sharing of technology. Such as using the Frostbite engine (game engine developed by another EA studio, DICE, in Sweden) instead of using the in-house engine BioWare developed \cite{frostbite-wiki}\cite{eadice-wiki}. In 2018, BioWare went through rebranding that replaced the logos (figure \ref{fig:biowarelogos}).\cite{bioware-wiki}\\
+\\
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[c]{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.7\textwidth]{assets/logo1995}
+		\caption{BioWare logo in 1995}
+	\end{subfigure}
+	~
+	\begin{subfigure}[c]{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.7\textwidth]{assets/logo2005}
+		\caption{BioWare logo prior to rebranding}
+	\end{subfigure}
+	~
+	\begin{subfigure}[c]{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.7\textwidth]{assets/logo2018}
+		\caption{BioWare logo in 2018}
+	\end{subfigure}
+	\caption{BioWare logos}
+	\label{fig:biowarelogos}
+\end{figure}
+
 There is a pipeline of games the studio outputs, the latest one being Anthem, showcased at the Electronic Entertainment Expo (E3) in 2017 and 2018. The game so far has won many E3 awards.\\
 \\
-My position is an associate developer on the UI/UX team for the game Anthem. Mostly developing engine tools, and elements the scriptwriters and artists can then use to add feature into the game. \\
-
+To date, there are 800 active employees working at BioWare ranging from artists to programmers. My position is an associate developer on the UI/UX team for the game Anthem. Mostly developing engine tools, and elements the scriptwriters and artists can then use to add feature into the game. \\
 
 \section{Work Term Industry}\label{work-term-industry}
 
 % Unorganized
-The "root" industry is consumer entertainment. This includes games, TV shows, movies, sports, etc. It is to be noted that even though the BioWare studio develops games, the publisher is associated with franchises in films such as Star Wars and sports such as NHL, NBA, Madden, etc.\\
+% The "root" industry is consumer entertainment. This includes games, TV shows, movies, sports, etc. It is to be noted that even though the BioWare studio develops games, the publisher is associated with franchises in films such as Star Wars and sports such as NHL, NBA, Madden, etc.\\
+% \\
+% The more specific work term industry this belongs to is the ``video game industry" \cite{video-game-industry}. The industry consists of hardware development and manufacturing (such as video game consoles, controllers, computers, etc.), software (programming, servers and infrastructures), and content creation (art, videos). The following graph breaks down the roles for video game industry \cite{EA-intern-conf-2} (at least in the perspective of EA).
+% end of unorganized
+
+BioWare is computer software company that develops video games for PCs, XBOX, and PlayStation. Thus we fall under \textit{Services - Computer Programming / Software} industry. 
+
+\subsection{Industry History}
+
+The history of video game industry started in the 1970s when computers are powerful enough to run games even though videos exisited since the 40s. Recently, the video game industry has expanded to many platforms including social media, mobile, argumented reality (AR) and virtual reality (VR).\cite{video-game-industry-wiki}\cite{video-game-industry-stats}\\
+
+\subsection{Economic Status}
+
+Earlier games in the industry are generally cheap inexpensive to make because of small teams and low demand for quality from the consumers. In recent decades however, large budget games (A.K.A AAA or Triple A games) consists of large development teams and usually takes  a year to three yeear to develop a single game. This is due to increased technological complexity.\cite{cost-game}\\
 \\
-The more specific work term industry this belongs to is the ``video game industry" \cite{video-game-industry}. The industry consists of hardware development and manufacturing (such as video game consoles, controllers, computers, etc.), software (programming, servers and infrastructures), and content creation (art, videos). The following graph breaks down the roles for video game industry \cite{EA-intern-conf-2} (at least in the perspective of EA).
+In 2017, the video game industry was valued at 17.68 billion USD. \cite{video-game-industry-stats}.\\
+\\
+One competitor in the industry, Rockstar, and their most recent products Grand Theft Auto V (GTA 5) has become the most profitable product in the industry \cite{IGN-gta5}. With a total revenue of \$6 billion, it has made "more money than any film, book, or game".\\
+
+\subsection{Geographics \& Concentrations}
+
+The industry applies worldwide. The USA is one of the largest producer of video games, most companies and publishers including Electronic Arts, Blizzard - Activision, and Valve (they own the world's largest online video game distribution platform - Steam \cite{steam}).\\
+\\
+The largest market is China, with MMO games on PC being the largest category \cite{video-game-china}\cite{big-game-china}.
+
+\subsection{Opportunities for Engineers}
 
 \begin{figure}[H]
 	\centering
@@ -109,25 +170,39 @@ The more specific work term industry this belongs to is the ``video game industr
 	\caption{Video game as career}
 \end{figure}
 
-One competitor in the industry, Rockstar, and their most recent products Grand Theft Auto V (GTA 5) has become the most profitable product in the industry \cite{IGN-gta5}. With a total revenue of \$6 billion, it has made "more money than any film, book, or game".
-% end of unorganized
-
-\subsection{History}
-
-\subsection{Economic Status}
-
-\subsection{Geographics \& Concentrations}
-
-\subsection{Opportunities for Engineers}
-
 \subsection{Employers in the Industry}
+
+If the industry is scoped to the video game industry then:
+
+Electronic Arts
+- BioWare
+- DICE
+- Other studios (for EA sports)
+
+Microsoft
+
+If the industry covers whole of computer programming / software then:
+
+Google
+Amazon
+etc.
+
+
 
 \subsection{Economic Factors}
 
+Technological advance
+- Increased demand
+
 \subsection{Political Factors}
+
+- Video game addiction in Asian countries
+
+- Video game esports influence in SKorea
 
 \section{Obtained Skills}\label{obtained-skills}
 
+% BEGIN of unorganized
 This section provides an overview of my technical and non-technical skills gained at BioWare over the course of the work term. \\
 \\
 
@@ -149,6 +224,12 @@ The obtained technical skills include:
 Social skills:
 - Asking for help from anyone in the office
 - Participating in design review
+
+% END of unorganized
+
+\subsection{Technical Skills}
+
+\subsection{Non-Technical Skills}
 
 \section{Desired Future Industry}\label{desired-future-industry}
 
@@ -192,6 +273,14 @@ Benefits:
 - Research experience
 - Grad school recommendations
 
+\subsection{Industry History}
+\subsection{Economic Status}
+\subsection{Geographics \& Concentrations}
+\subsection{Opportunities for Engineers}
+\subsection{Employers in the Industry}
+\subsection{Economic Factors}
+\subsection{Political Factors}
+
 \section{Technical \& Transferable Skills for Senior Work Terms}\label{transferable-skills}
 
 % Unorganized
@@ -218,6 +307,9 @@ Social skills
 
 \begin{thebibliography}{}
 	% Bibliography
+	
+	\bibitem{IGN-gta5}
+	Arif, S. (2018, April 9). GTA 5 Has Made More Money Than Any Film, Book, or Game, Says Analyst. Retrieved May 10, 2018, from http://ca.ign.com/articles/2018/04/09/gta-5-has-made-more-money-than-any-film-book-or-game-says-analyst
 
 	\bibitem{bioware}
 	BioWare | Rich Stories, Unforgettable Characters, And Vast Worlds. (2018). Retrieved May 23, 2018, from http://www.bioware.com/en/
@@ -225,17 +317,35 @@ Social skills
 	\bibitem{bioware-wiki}
 	BioWare. (2018, May 23). Retrieved May 23, 2018, from https://en.wikipedia.org/wiki/BioWare
 
+	\bibitem{frostbite-wiki}
+	Frostbite (game engine). (2018). Retrieved June 27, 2018, from https://en.wikipedia.org/wiki/Frostbite\_(game\_engine)
+
+	\bibitem{eadice-wiki}
+	EA DICE. (2018). Retrieved June 27, 2018, from https://en.wikipedia.org/wiki/EA\_DICE
+
 	\bibitem{bioware-wiki-list}
 	List of BioWare video games. (2018, May 22). Retrieved May 23, 2018, from https://en.wikipedia.org/wiki/List\_of\_BioWare\_video\_games
 
 	\bibitem{VG247-bf5}
 	Nunneley, S. (2018, May 8). Battlefield 5 will feature "unique battles" and new challenges, Anthem to be designed around player input. VG247. Retrieved May 8, 2018, from https://www.vg247.com/2018/05/08/battlefield-5-unique-battles-challenges-anthem/
 
-	\bibitem{IGN-gta5}
-	Arif, S. (2018, April 9). GTA 5 Has Made More Money Than Any Film, Book, or Game, Says Analyst. Retrieved May 10, 2018, from http://ca.ign.com/articles/2018/04/09/gta-5-has-made-more-money-than-any-film-book-or-game-says-analyst
+	\bibitem{steam}
+	Steam, The Ultimate Online Game Platform. (2018). Retrieved June 27, 2018, from https://store.steampowered.com/about/
 
-	\bibitem{video-game-industry}
+	\bibitem{cost-game}
+	Superannuation. (2014, Jan 15). How Much Does It Cost To Make A Big Video Game?. Kotaku. Retrieved June 27, 2018, from https://kotaku.com/how-much-does-it-cost-to-make-a-big-video-game-1501413649
+
+	\bibitem{video-game-industry-wiki}
 	Video Game Industry. (2018, June 24). Retrieved June 24. 2018, from https://en.wikipedia.org/wiki/Video\_game\_industry
+
+	\bibitem{video-game-industry-stats}
+	Video Game Industry - Statistics \& Facts. (2018, June 27). Retrieved June 27, 2018, from https://www.statista.com/topics/868/video-games/
+
+	\bibitem{video-game-china}
+	Video gaming in China (2018). Retrieved June 27, 2018, from https://en.wikipedia.org/wiki/Video\_gaming\_in\_China
+
+	\bibitem{big-game-china}
+	Ye, J. (2018, Jan 8). How big is China's gaming industry?. Retrieved June 27, 2018, from https://www.scmp.com/video/business/2127327/how-big-chinas-gaming-industry
 
 	\bibitem{EA-intern-conf-2}
 	Some guest speaker <todo>
