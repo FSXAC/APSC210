@@ -243,31 +243,55 @@ It is worth noting that since everyone is working off of the same depot that con
 	}
 \end{quote}
 
-One should also be comfortable working with packages and modules (along with its associated package managers) since this makes the project more modular.\\
+One should also be comfortable working with packages and modules (along with its associated package managers) since this makes the project more modular and encourages code reuse (for other licensees). Because of the modularity, one must make no assumptions about how future developers will use this code. Thus, it is important to test extensively, check errors, validate interfaces, and cover edge cases.\\
 \\
-
-- Work with packages and modules that are separated from the game codebase
-- Agile methodologies including code review, creating and resolving JIRA tasks
-- Contributing to the documentation (confluence, wiki, etc)
+Moreover, familiarity with agile methodologies is useful in software development environment. Specific actions include code review, time management, and task management with cards (known as ``JIRA'' for EA internals). Each card contains a specific task and is assigned to each person. The card is placed in the person's backlog, and is moved once the task on the card is done.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{assets/cards}
+	\caption{Cards used in agile methodologies here is depitcted in the app, Trello}
+	\label{fig:trello-cards}
+\end{figure}
+Lastly, contributing to technical documentation such as the development wiki (known as ``confluence'' internally). This can also be considered as a non-technical skill because it overlaps heavily with technical communications, a critical skill required in \textit{any} industry.\\
 
 \subsubsection{Programming Skills}
-- Gained more programming experience in C++
-- specifically, OOP and design patters for games engines (render thread, simulation thread, UI handling)
-- Gained experience in writing C\# for applications
-- Use python to write upgrade script for game assets
-- Writing code that complies with coding standard
-- Improved debugging in general
+
+To success in the video game industry or computer programming industry with heavy enphasis on graphics and physics engines (used ubiquitously in video game production), one should be familiar with C++ the programming language. All AAA video games released in the recent decades are all programmed in C++ or made from game engines made in C++.\\
+\\
+Of course, knowledge of any progamming language including C or Python helps too as they are useful in specific situtations (and they're used widely in other fields of computer programming: Python is a ``must-have" for AI or machine learning development).\\
+\\
+At my position at EA, C++ is the logic behind everything in the game. C\# is another programming language that is used widely in UI; it is also the most popular language in amateur game makers as it is used in the free game engine, Unity. We write in C\# for the tools and editors the artists and designers use to make other game content, but ultimately they are ``compiled" into C++. Finally, we write Python scripts to modify game content and assets in bulk.\\
+\\
+In addition to the specific programming languages, it is also nice to be familair with software concepts such as object oriented programming (OOP), UI/UX design patterns, multithreading to separte rendering and simulation, etc. More details will be in the next report (technial report for APSC 310).\\
+\\
+Debugging skills and techniques are equally important. The most important skill is to create a conceptual map in mind of where the problem lies, how much or where it is affecting, and where it is coming from by eliminating possibilities. Other techniques include attaching IDE to processes and threads, setting breakpoints and analysing variables in the debugger.\\
+\\
+Lastly, though it is obvious, it is important to keep in mind that future developers will likely see and use code we write. Writing code that complies with the coding standard, in terms of style of syntax and adding code comments and tags is beneficial.
 
 \subsubsection{Specific Toolset Skills}
-- Increased learning skill of using propriatery engine editor
-- Visual scripting
-- Understood the structure and serialization of these assets, as well as the entities and links within
-- Improved debugging skills in Visual Studio
+
+These specific toolset skills overlaps with technical skills. But skills involving specific toolsets emphasis on the learning skills. If one can learn, adapt, and use tool given in the development environment, it is and an indication of fast learner.\\
+\\
+In the current industry of my position, it's useful to understand (at least in context) of what the program or tool is doing under the hood.\\
+\\
+For instance, the developers use an engine editor called \textit{FrostEd} to make games using the \textit{Frostbite} engine. The editor is a propriatery and private software not distributed to the public, only to EA licensees (game studios). Thus, it is important to learn how to use the editor independently as there lacks online resources, which contributes to enhancing independent learning skills.\\
+\\
+\textit{FrostEd} is a visual script editor and outputs game assets and schematics used to put together the game. As such, each asset contains references to data, logic, entities, and more. Understanding what was going on underneth these files has helped me greatly in understanding how the editor serializes the assets, and helped me working with the tool and more intuitive in debugging.\\
+\\
+Perforce, the version control software as mentioned before is another case of skills in specific tools. This is because other companies may employ different version control software such as \texttt{git}.\\
 
 \subsection{Non-Technical Skills}
-- How to learn individually by looking to the code
-- Finding work for myself
-- Know how to google / stackoverflow for solutions
+
+The most important non-technical skill is learning independently as supervisors or team leads might not always have time to provide all details at all times. Especially if they're often busy.\\
+\\
+One should always first read through the documentation. Often times, this action is often informally abbreviated as ``RTFM'' which stands for ``Read The F-ing Manual!''. It is also useful to build a mental map or a physcial map of how things fit together.\\
+\\
+One should use critical thinking using first-principles to sovle problems. Which implies only thinking about what is absolutely true, then progress to what could have happened, then verify the hypothesis and repeat.\\
+\\
+One important skill that does not get emphasised enough (because of its simplicity) is knowing how to Google (or whichever search engine one prefers). Knowing how to find resources and information online efficiently and accurately saves times can greatly accelerate the learning process.\\
+\\
+Lastly, it is critical to be mentally healthy during work. Know when to take breaks and relief any frustration that arises during work. Induced frustration and stress often leads to decrease in productivity and cognitive functions.\\
+\\
 
 \section{Desired Future Industry}\label{desired-future-industry}
 
