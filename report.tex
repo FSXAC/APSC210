@@ -65,7 +65,7 @@
 		\vfill
 		\Large{Muchen He}\\
 		\large{Associate Developer, BioWare Edmonton}\\
-		44638154\\
+		Student Number: 44638154\\
 
 		\today \\
 	\end{center}
@@ -139,7 +139,7 @@ The company is now a division of EA, which is an American video game publishing 
 
 There is a pipeline of games the studio outputs, the latest one being Anthem, showcased at the Electronic Entertainment Expo (E3) in 2017 and 2018. The game so far has won many E3 awards.\\
 \\
-To date, there are 800 active employees working at BioWare ranging from artists to programmers. My position is an associate developer on the UI/UX team for the game Anthem. Mostly developing engine tools, and elements the scriptwriters and artists can then use to add feature into the game. \\
+To date, there are 800 active employees working at BioWare ranging from artists to programmers \cite{bioware-wiki}. My position is an associate developer on the UI/UX team for the game Anthem. Mostly developing engine tools, and elements the scriptwriters and artists can then use to add feature into the game.\\
 
 \clearpage
 \section{Work Term Industry}\label{work-term-industry}
@@ -156,7 +156,7 @@ The history of video game industry started in the 1970s when computers are power
 
 \subsection{Economic Status}
 
-The video game industry economic status is growing as 
+The video game industry economic status is growing as
 
 Earlier games in the industry are generally cheap inexpensive to make because of small teams and low demand for quality from the consumers. In recent decades however, large budget games (A.K.A AAA or Triple A games) consists of large development teams and usually takes  a year to three yeear to develop a single game. This is due to increased technological complexity.\cite{cost-game}\\
 \\
@@ -201,6 +201,46 @@ For computer programming / software industry, the most notable industries includ
 In the scope of the video game industry, EA is one of the biggest publisher in North America which owns subsidiaries including BioWare and DICE.\\
 \\
 Another large video game publisher is from the giant Tencent, a Chinese internet company. They own Riot, a studio that developed League of Legends (LoL) which has 27 million players daily and an E-sports scene with over 11 million viewership.\cite{lol-wiki}\\
+\\
+In terms of the overall quality of the games produces, EA ranks number one globally in 2017 \cite{game-publishers-metacritic}. Refer to table \ref{table:metacritic-ranking} for other game publishers in the industry. In terms of total revenue, EA ranks 6th, at 3.25 billion euros in 2015\cite{game-publishers-revenue}. Refer to table \ref{table:revenue-ranking} for ranked reveue of other major publishers.\\
+\\
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ |c|c|c| }
+		\hline
+		\textbf{Rank} & \textbf{Publisher} & \textbf{Score} \\
+		\hline
+		1             & Elecronic Arts     & 298.2          \\
+		2             & Square Enix        & 285.0          \\
+		3             & Nintendo           & 272.8          \\
+		4             & Sony               & 254.8          \\
+		$\vdots$      & $\vdots$           & $\vdots$       \\
+	\end{tabular}
+	\caption{Major game publishers ranked by sum of weighted critic scores of published games\cite{game-publishers-metacritic}}
+	\label{table:metacritic-ranking}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ |c|c|c| }
+		\hline
+		\textbf{Rank} & \textbf{Publisher} & \textbf{Revenue (billion euros)} \\
+		\hline
+		1             & Sony               & 9.89                             \\
+		2             & Tencent            & 7.73                             \\
+		3             & Microsoft          & 7.25                             \\
+		4             & Nintendo           & 3.92                             \\
+		5             & Activison Blizzard & 3.32                             \\
+		6             & Electronic Arts    & 3.25                             \\
+		$\vdots$      & $\vdots$           & $\vdots$                         \\
+	\end{tabular}
+	\caption{Major game publishers ranked by revenue\cite{game-publishers-revenue}}
+	\label{table:revenue-ranking}
+\end{table}
+
+Note that Sony, Microsoft, and Nintendo has much higher revenue because these publishers also develop and sell game console systems (hardware), whereas other game studios only focus on the software. It's also worth noting that Tencent and Activision Blizzard has owns a large market in China with Tecent dominating all of China (being a Chinese internet tech-giant company)\cite{tencent-wiki}.\\
 
 \subsection{Economic Factors}
 
@@ -239,19 +279,16 @@ Social skills:
 
 \subsection{Technical Skills}
 
-Being in a technical co-op position, the primary skills are comprised of technical skills in software development. The technical skills can be broken down into: fundamental and development workflow skills, programming skills,, and skills invoving specific toolsets.\\
+Being in a technical co-op position, the primary skills are comprised of technical skills in software development. The technical skills can be broken down into: fundamental and development workflow skills, programming skills, and skills invoving specific toolsets.\\
 
 \subsubsection{Fundamental \& Development Skills}
 
 The first category of skills involves fundamentally useful abilities in a development studio.\\
 \\
 To succeed in this position, one should be proficient in understanding and using version control solutions such as Git (most common) or Perforce (used in enterprise such as Google and EA). Version control is especially important as there are tens or hundreds of developers working on the same project or codebase. It is not uncommon that multiple files undergo ``conflict'' as the same file could be worked on by multiple developers. Therefore explicit version tracking and tools are vital to the workflow.\\
-\begin{quote}
-	\textit{
-It is worth noting that since everyone is working off of the same depot that contains the source code and game data, if one were to break the build, everyone would be affected resulting in many work hours lost.
-	}
-\end{quote}
-
+\\
+It is worth noting that since everyone is working off of the same depot that contains the source code and game data, if one were to break the build, everyone would be affected resulting in many work hours lost.\\
+\\
 One should also be comfortable working with packages and modules (along with its associated package managers) since this makes the project more modular and encourages code reuse (for other licensees). Because of the modularity, one must make no assumptions about how future developers will use this code. Thus, it is important to test extensively, check errors, validate interfaces, and cover edge cases.\\
 \\
 Moreover, familiarity with agile methodologies is useful in software development environment. Specific actions include code review, time management, and task management with cards (known as ``JIRA'' for EA internals). Each card contains a specific task and is assigned to each person. The card is placed in the person's backlog, and is moved once the task on the card is done.\\
@@ -271,8 +308,22 @@ Of course, knowledge of any progamming language including C or Python helps too 
 \\
 At my position at EA, C++ is the logic behind everything in the game. C\# is another programming language that is used widely in UI; it is also the most popular language in amateur game makers as it is used in the free game engine, Unity. We write in C\# for the tools and editors the artists and designers use to make other game content, but ultimately they are ``compiled" into C++. Finally, we write Python scripts to modify game content and assets in bulk.\\
 \\
-In addition to the specific programming languages, it is also nice to be familair with software concepts such as object oriented programming (OOP), UI/UX design patterns, multithreading to separte rendering and simulation, etc. More details will be in the next report (technial report for APSC 310).\\
-\\
+In addition to the specific programming languages, it is also nice to be familair with software concepts such as object oriented programming (OOP) (simplified and depicted in figure \ref{fig:oopp}), UI/UX design patterns (as shown in figure \ref{fig:ooppui}), multithreading to separte rendering and simulation, etc. More details will be in the next report (technial report for APSC 310).\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.45\textwidth]{assets/oopp}
+	\caption{Object-Oriented Programming Paradigm that shows Polymorphism and Inheritance\cite{oopp}}
+	\label{fig:oopp}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{assets/ooppui}
+	\caption{Object-Oriented Modeling of User Interface (UI) Design\cite{oopp}}
+	\label{fig:ooppui}
+\end{figure}
+
 Debugging skills and techniques are equally important. The most important skill is to create a conceptual map in mind of where the problem lies, how much or where it is affecting, and where it is coming from by eliminating possibilities. Other techniques include attaching IDE to processes and threads, setting breakpoints and analysing variables in the debugger.\\
 \\
 Lastly, though it is obvious, it is important to keep in mind that future developers will likely see and use code we write. Writing code that complies with the coding standard, in terms of style of syntax and adding code comments and tags is beneficial.
@@ -287,13 +338,13 @@ For instance, the developers use an engine editor called \textit{FrostEd} to mak
 \\
 \textit{FrostEd} is a visual script editor and outputs game assets and schematics used to put together the game. As such, each asset contains references to data, logic, entities, and more. Understanding what was going on underneth these files has helped me greatly in understanding how the editor serializes the assets, and helped me working with the tool and more intuitive in debugging.\\
 \\
-Perforce, the version control software as mentioned before is another case of skills in specific tools. This is because other companies may employ different version control software such as \texttt{git}.\\
+Perforce, the version control software as mentioned before is another case of skills in specific tools\cite{perforce}. Other companies may employ different version control software such as \texttt{git}\cite{git}.\\
 
 \subsection{Non-Technical Skills}
 
 The most important non-technical skill is learning independently as supervisors or team leads might not always have time to provide all details at all times. Especially if they're often busy.\\
 \\
-One should always first read through the documentation. Often times, this action is often informally abbreviated as ``RTFM'' which stands for ``Read The F-ing Manual!''. It is also useful to build a mental map or a physcial map of how things fit together.\\
+One should always first read through the documentation. Often times, this action is often informally abbreviated as ``RTFM''. It is also useful to build a mental map or a physcial map of how things fit together.\\
 \\
 One should use critical thinking using first-principles to sovle problems. Which implies only thinking about what is absolutely true, then progress to what could have happened, then verify the hypothesis and repeat.\\
 \\
@@ -309,9 +360,9 @@ This section outlines my desired future industry to expand my career as well as 
 \subsection{Choosing Desired Industry}
 
 This sub-section intends to provide personal reflection on possible industries in my career progression.\\
-
+\\
 \textbf{Depth}\\
-I have two choices in mind. The first is software development or computer programming industry. This encourages depth as I already have a few work-terms worth of experiences. Choosing said industry also implies more work on in the UI/UX or app development (relatively front end and higher level) for its high demand. It could be a viable option that consolidates existing technical skills.\\
+I have two choices in mind. The first is software development or computer programming industry. This encourages depth as I already have a few work-terms worth of experiences. Choosing said industry also implies more work on in the UI/UX or app development (relatively front end and higher level) for its high demand. It could be a viable option that consolidates existing technical skills.\cite{naics}\\
 \\
 Possible specific industries include software development (for companies such as Microsoft, Amazon, and start-ups) and video game industry (such as coming back to Electronic Arts or explore other game publishers).\\
 \\
@@ -320,20 +371,23 @@ The benefit of choosing software industry is that I already possess many skills 
 The trade off being that my existing skills in this specific area, which consist of programming in C++, UI/UX and app development, will snowball. As a result, it will be more likely that my future positions be software developer. The career inertia could potentially make it more difficult to enter into  other industries in case of career change.\\
 \\
 \textbf{Breadth}\\
-The second option is to explore industries that differs from pure high-level software development. Industries that could potentially be more related to the my study in electrical engineering. Such as to apply knowledge practiced in courses such as operating and designing electronics or PCBs, mechanical components, apply theories such as controls theory in hardware projects or robotics. The intent would be to try other tasks to expand my set of skills into positions of different industries.\\
+The second option is to explore industries that differs from pure high-level software development. Industries that could potentially be more related to the my study in electrical engineering. Such as to apply knowledge practiced in courses such as operating and designing electronics or PCBs, mechanical components, apply theories such as controls theory in hardware projects or robotics. The intent would be to try other tasks to expand my set of skills into positions of different industries.\cite{naics}\\
 \\
 Possible industries include electronic and hardware R\&D or design and manufacturing. There are serveral companies that fall under this industry: Intel and Altera for hardware development such as field programmable gate array (FPGA) which are technlogies explored in CPEN courses. Tesla for electric and battery engineering. DJI for drone develop or other robotic applications.\\
 \\
 The benefit of this route is that to experience new positions, gain insight and additional interests. By expanding skill set, my technical experience is not fixated on software development.\\
 \\
-For the scope of this report, I will explore the latter industry for a mix of both hardware and low level software/firmware. This falls under the sector outlined on the Co-op handbook\cite{coop-handbook} manufacturing and services sectors; namely ``Computer/Electrical/Electronic Machinary/Equipment" and ``Computer Related Services/Hardware".\\
-\\
+For the scope of this report, I will continue to explore the computer programming / software industry because the current work term already encapsulated in the desired industry\cite{coop-handbook}. Thus we will explore two sectors:
+\begin{enumerate}
+	\item
+	      Programming in a sector with lower-level development such as robotics, controls, or firmware development. Which comprises a mix of both hardware and low level software/firmware.
+
+	\item
+	      High-level full-stack development which includes applying machine learning, web developments (MangoDB, Express, React, NodeJS (MERN) - the languages for an entire ``stack'' required to build modern applications \cite{mern})
+\end{enumerate}
+
 \subsection{Industry History}
-
-% TODO:
-
-The electrical machinary equipment industry has been relevant since the industrial revolution while the computer hardware industry emerged after the world wars as they become more applicable to consumers.\\
-\\
+The lower level programming such as firmware has been relavent since the 1960s. The term ``firmware'' is coined in 1967 \cite{firmware-term}.
 
 \subsection{Economic Status}
 % TODO:
@@ -396,7 +450,8 @@ This contains the researched required advanced skill for the industry we looked 
 \addcontentsline{toc}{section}{Conclusion}
 
 \clearpage
-\bibliographystyle{unsrt}
+\bibliographystyle{ieeetr}
 \bibliography{references}
+\addcontentsline{toc}{section}{References}
 
 \end{document}
