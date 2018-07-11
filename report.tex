@@ -1,26 +1,32 @@
 \documentclass[10pt,letterpaper]{article}
-\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{hyperref}
-\usepackage{makeidx}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{svg}
-\usepackage{subcaption}
+\usepackage[english]{babel}
+\usepackage{breakurl}
+\usepackage[superscript]{cite}
 \usepackage{fancyhdr}
 \usepackage{float}
-\usepackage{tikz}
-\usepackage{nth}
-\usepackage{multicol}
-\usepackage{siunitx}
-\usepackage[default,scale=1.0]{opensans}
 \usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{nth}
+\usepackage[default,scale=1.0]{opensans}
+\usepackage{siunitx}
+\usepackage{svg}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{url}
 
 %% Preamble
 % Custom commands
 \newcommand{\ts}{\textsubscript}
+
+% Use hyphans to break up urls
+\def\UrlBreaks{\do\/\do-}
 
 % Hyper ref
 \hypersetup{
@@ -105,7 +111,7 @@ EA or BioWare, like many other studios or publishers exist in the market right n
 
 BioWare is a game development studio founded in 1995 by three medical doctors in Edmonton, Alberta\cite{bioware-wiki}. Since the establishment, BioWare has developed numerous titles including the Mass Effect and Dragon Age franchise as well as the massive multiplier online (MMO) game Star Wars: The Old Republic. BioWare is currently developing Anthem, the upcoming game set to release in Feburary, 2019.\\
 \\
-The company is now a division of EA, which is an American video game publishing company. This allows for cross-studio sharing of technology. Such as using the Frostbite engine (game engine developed by another EA studio, DICE, in Sweden) instead of using the in-house engine BioWare developed \cite{frostbite-wiki}\cite{eadice-wiki}. In 2018, BioWare went through rebranding that replaced the logos (figure \ref{fig:biowarelogos}).\cite{bioware-wiki}\\
+The company is now a division of EA, which is an American video game publishing company. This allows for cross-studio sharing of technology. Such as using the Frostbite engine (game engine developed by another EA studio, DICE, in Sweden) instead of using the in-house engine BioWare developed \cite{frostbite-wiki, eadice-wiki}. In 2018, BioWare went through rebranding that replaced the logos (figure \ref{fig:biowarelogos}).\cite{bioware-wiki}\\
 \\
 \begin{figure}[H]
 	\centering
@@ -146,7 +152,7 @@ We will also examine the video game industry in depth because of its relevance a
 
 The software industry primary focuses on developing computer programs as service (SaaS) or product that started in the 1950s. Recently, open source solutions and internet of things (IoT) are popular.\cite{software-industry}\\
 \\
-The history of video game industry started in the 1970s when computers are powerful enough to run games even though videos exisited since the 40s. Recently, the video game industry has expanded to many platforms including social media, mobile, argumented reality (AR) and virtual reality (VR).\cite{video-game-industry-wiki}\cite{video-game-industry-stats}\\
+The history of video game industry started in the 1970s when computers are powerful enough to run games even though videos exisited since the 40s. Recently, the video game industry has expanded to many platforms including social media, mobile, argumented reality (AR) and virtual reality (VR).\cite{video-game-industry-wiki, video-game-industry-stats}\\
 
 \subsection{Economic Status}
 
@@ -154,16 +160,16 @@ The video game industry economic status is growing as
 
 Earlier games in the industry are generally cheap inexpensive to make because of small teams and low demand for quality from the consumers. In recent decades however, large budget games (A.K.A AAA or Triple A games) consists of large development teams and usually takes  a year to three yeear to develop a single game. This is due to increased technological complexity.\cite{cost-game}\\
 \\
-In 2017, the video game industry was valued at 17.68 billion USD. \cite{video-game-industry-stats}.\\
+In 2017, the video game industry was valued at 17.68 billion USD\cite{video-game-industry-stats}.\\
 \\
-One competitor in the industry, Rockstar, and their most recent products Grand Theft Auto V (GTA 5) has become the most profitable product in the industry \cite{IGN-gta5}. With a total revenue of \$6 billion, it has made "more money than any film, book, or game".\\
+One competitor in the industry, Rockstar, and their most recent products Grand Theft Auto V (GTA 5) has become the most profitable product in the industry \cite{ign-gta5}. With a total revenue of \$6 billion, it has made "more money than any film, book, or game".\\
 \\
-EA's earnings is as show below (figure \ref{fig:ea-revenue})\cite{ea-earnings}. As shown, there is an increasing amount of income from ``Live Serivces''. This includes the after-sale content such as downloadable contents (DLCs) and micro-transactions (MTX) within the published games. Due to its financial appeal, Anthem will follow the same \textit{live services} model. The game will feature purchaseable cosmetic items  and will not have ``lootboxes'' (more details in economic factors section).\\
+EA's earnings is as show below (figure \ref{fig:ea-revenue}). As shown, there is an increasing amount of income from ``Live Serivces''. This includes the after-sale content such as downloadable contents (DLCs) and micro-transactions (MTX) within the published games. Due to its financial appeal, Anthem will follow the same \textit{live services} model. The game will feature purchaseable cosmetic items  and will not have ``lootboxes'' (more details in economic factors section) \cite{ea-earnings}.\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{assets/ea-revenue}
-	\caption{EA Earnings by Type}
+	\caption{EA Digital Net Earnings by Type\cite{ea-earnings}}
 	\label{fig:ea-revenue}
 \end{figure}
 
@@ -173,18 +179,18 @@ The software industry is global. Industry leaders are based in USA. Because one 
 \\
 The video game industry also applies worldwide. The USA is one of the largest producer of video games, most companies and publishers including Electronic Arts, Blizzard - Activision, and Valve (they own the world's largest online video game distribution platform - Steam \cite{steam}).\\
 \\
-The largest market is China, with MMO games on PC being the largest category \cite{video-game-china}\cite{big-game-china}.
+The largest market is China, with MMO games on PC being the largest category \cite{video-game-china, big-game-china}.
 
 \subsection{Opportunities for Engineers}
 
-For the video game industry, even though the products are viewed as entertainment or arts by the public, there are still many critical roles for engineers. According to Carlos Guerrero, a senior producer at EA, who had worked on games including World of Warcraft (WoW) and Overwatch, there are many technologies that goes into a game that need to be developed and maintained.\\
+For the video game industry, even though the products are viewed as entertainment or arts by the public, there are still many critical roles for engineers. According to Carlos Guerrero, a senior producer at EA, who had worked on games including World of Warcraft (WoW) and Overwatch, there are many technologies that goes into a game that need to be developed and maintained.\cite{intern-speaker}\\
 \\
 The following chart depicts various roles that goes into making a game (figure \ref{fig:video-game-as-career}). In fact, the engineers make up a critical part: from video game engine development to online system infrastructure.\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{assets/video-games-career-roles}
-	\caption{Video game as career}
+	\caption{Video game as career\cite{intern-speaker}}
 	\label{fig:video-game-as-career}
 \end{figure}
 
@@ -209,6 +215,8 @@ Another large video game publisher is from the giant Tencent, a Chinese internet
 % The video game industry has also been more relevant than ever. The increase in mobile gaming market and e-sports has 
 
 \subsection{Political Factors}
+
+% TODO:
 
 \begin{center}
 	This section intentionally left blank (not applicable).
@@ -318,16 +326,33 @@ Possible industries include electronic and hardware R\&D or design and manufactu
 \\
 The benefit of this route is that to experience new positions, gain insight and additional interests. By expanding skill set, my technical experience is not fixated on software development.\\
 \\
-For the scope of this report, I will explore the latter industry for a mix of both hardware and low level software/firmware. This falls under the sector outlined on the Co-op handboox\cite{coop-handbook} manufacturing and services sectors; namely ``Computer/Electrical/Electronic Machinary/Equipment" and ``Computer Related Services/Hardware".\\
+For the scope of this report, I will explore the latter industry for a mix of both hardware and low level software/firmware. This falls under the sector outlined on the Co-op handbook\cite{coop-handbook} manufacturing and services sectors; namely ``Computer/Electrical/Electronic Machinary/Equipment" and ``Computer Related Services/Hardware".\\
 \\
 \subsection{Industry History}
 
+% TODO:
+
+The electrical machinary equipment industry has been relevant since the industrial revolution while the computer hardware industry emerged after the world wars as they become more applicable to consumers.\\
+\\
+
 \subsection{Economic Status}
+% TODO:
+
 \subsection{Geographics \& Concentrations}
+% TODO:
+
 \subsection{Opportunities for Engineers}
+% TODO:
+
 \subsection{Employers in the Industry}
+% TODO:
+
 \subsection{Economic Factors}
+% TODO:
+
 \subsection{Political Factors}
+% TODO:
+
 
 \clearpage
 \section{Technical \& Transferable Skills for Senior Work Terms}\label{transferable-skills}
@@ -371,60 +396,7 @@ This contains the researched required advanced skill for the industry we looked 
 \addcontentsline{toc}{section}{Conclusion}
 
 \clearpage
-\begin{thebibliography}{}
-	% Bibliography
-	
-	\bibitem{IGN-gta5}
-	Arif, S. (2018, April 9). GTA 5 Has Made More Money Than Any Film, Book, or Game, Says Analyst. Retrieved May 10, 2018, from http://ca.ign.com/articles/2018/04/09/gta-5-has-made-more-money-than-any-film-book-or-game-says-analyst
-
-	\bibitem{bioware}
-	BioWare | Rich Stories, Unforgettable Characters, And Vast Worlds. (2018). Retrieved May 23, 2018, from http://www.bioware.com/en/
-
-	\bibitem{bioware-wiki}
-	BioWare. (2018, May 23). Retrieved May 23, 2018, from https://en.wikipedia.org/wiki/BioWare
-
-	\bibitem{frostbite-wiki}
-	Frostbite (game engine). (2018). Retrieved June 27, 2018, from https://en.wikipedia.org/wiki/Frostbite\_(game\_engine)
-
-	\bibitem{eadice-wiki}
-	EA DICE. (2018). Retrieved June 27, 2018, from https://en.wikipedia.org/wiki/EA\_DICE
-
-	\bibitem{ea-earnings}
-	EA. (Jan 30, 2018). Electronic Arts Reports Q3 FY18 Financial Results. Retrieved July 5, 2018, from http://news.ea.com/press-release/company-news/electronic-arts-reports-q3-fy18-financial-results
-
-	\bibitem{lol-wiki}
-	League of Legends. (2018). Retrieved July 3, 2018, from https://en.wikipedia.org/wiki/League\_of\_Legends.
-
-	\bibitem{bioware-wiki-list}
-	List of BioWare video games. (2018, May 22). Retrieved May 23, 2018, from https://en.wikipedia.org/wiki/List\_of\_BioWare\_video\_games
-
-	\bibitem{software-industry}
-	McDonald, TK. (2016, May 6). The Industry Handbook: Software Industry. Retrieved July 3, 2018, from https://www.investopedia.com/articles/markets/050416/industry-handbook-software-industry.asp
-
-	\bibitem{VG247-bf5}
-	Nunneley, S. (2018, May 8). Battlefield 5 will feature "unique battles" and new challenges, Anthem to be designed around player input. VG247. Retrieved May 8, 2018, from https://www.vg247.com/2018/05/08/battlefield-5-unique-battles-challenges-anthem/
-
-	\bibitem{steam}
-	Steam, The Ultimate Online Game Platform. (2018). Retrieved June 27, 2018, from https://store.steampowered.com/about/
-
-	\bibitem{cost-game}
-	Superannuation. (2014, Jan 15). How Much Does It Cost To Make A Big Video Game?. Kotaku. Retrieved June 27, 2018, from https://kotaku.com/how-much-does-it-cost-to-make-a-big-video-game-1501413649
-
-	\bibitem{video-game-industry-wiki}
-	Video Game Industry. (2018, June 24). Retrieved June 24. 2018, from https://en.wikipedia.org/wiki/Video\_game\_industry
-
-	\bibitem{video-game-industry-stats}
-	Video Game Industry - Statistics \& Facts. (2018, June 27). Retrieved June 27, 2018, from https://www.statista.com/topics/868/video-games/
-
-	\bibitem{video-game-china}
-	Video gaming in China (2018). Retrieved June 27, 2018, from https://en.wikipedia.org/wiki/Video\_gaming\_in\_China
-
-	\bibitem{big-game-china}
-	Ye, J. (2018, Jan 8). How big is China's gaming industry?. Retrieved June 27, 2018, from https://www.scmp.com/video/business/2127327/how-big-chinas-gaming-industry
-
-	\bibitem{EA-intern-conf-2}
-	Some guest speaker <todo>
-
-\end{thebibliography}
+\bibliographystyle{unsrt}
+\bibliography{references}
 
 \end{document}
