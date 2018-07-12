@@ -1,4 +1,5 @@
 \documentclass[10pt,letterpaper]{article}
+% \documentclass[12pt,letterpaper]{article}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -15,6 +16,7 @@
 \usepackage{multicol}
 \usepackage{nth}
 \usepackage[default,scale=1.0]{opensans}
+\usepackage{setspace}
 \usepackage{siunitx}
 \usepackage{svg}
 \usepackage{subcaption}
@@ -24,6 +26,9 @@
 %% Preamble
 % Custom commands
 \newcommand{\ts}{\textsubscript}
+
+% Double spacing
+% \doublespacing
 
 % Use hyphans to break up urls
 \def\UrlBreaks{\do\/\do-}
@@ -244,11 +249,7 @@ Note that Sony, Microsoft, and Nintendo has much higher revenue because these pu
 
 \subsection{Economic Factors}
 
-% TODO:
-
-\begin{center}
-	This section intentionally left blank (not applicable).
-\end{center}
+This section is intentionally left blank (not applicable).
 
 % The computer programming / software industry has been in high demand for decades. It has evolved 
 
@@ -256,11 +257,7 @@ Note that Sony, Microsoft, and Nintendo has much higher revenue because these pu
 
 \subsection{Political Factors}
 
-% TODO:
-
-\begin{center}
-	This section intentionally left blank (not applicable).
-\end{center}
+Unless Hillary Clinton's reference on ``\textit{Pokemon Go} to the polls" reference count as political influence\cite{pokemon-go}, this is section intentionally left blank (not applicable).
 
 % - Video game addiction in Asian countries
 % - Video game esports influence in SKorea
@@ -268,14 +265,7 @@ Note that Sony, Microsoft, and Nintendo has much higher revenue because these pu
 \clearpage
 \section{Obtained Skills}\label{obtained-skills}
 
-% BEGIN of unorganized
 This section provides an overview of my technical and non-technical skills gained at BioWare over the course of the work term. \\
-\\
-Social skills:
-- Asking for help from anyone in the office
-- Participating in design review
-
-% END of unorganized
 
 \subsection{Technical Skills}
 
@@ -291,11 +281,12 @@ It is worth noting that since everyone is working off of the same depot that con
 \\
 One should also be comfortable working with packages and modules (along with its associated package managers) since this makes the project more modular and encourages code reuse (for other licensees). Because of the modularity, one must make no assumptions about how future developers will use this code. Thus, it is important to test extensively, check errors, validate interfaces, and cover edge cases.\\
 \\
-Moreover, familiarity with agile methodologies is useful in software development environment. Specific actions include code review, time management, and task management with cards (known as ``JIRA'' for EA internals). Each card contains a specific task and is assigned to each person. The card is placed in the person's backlog, and is moved once the task on the card is done.\\
+Moreover, familiarity with agile methodologies is useful in software development environment. Specific actions include code review, time management, and task management with cards (known as ``JIRA'' for EA internals). Each card contains a specific task and is assigned to each person. The card is placed in the person's backlog, and is moved once the task on the card is done\cite{agile}.\\
+\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\textwidth]{assets/cards}
-	\caption{Cards used in agile methodologies here is depitcted in the app, Trello}
+	\caption{Cards used in agile methodologies here is depitcted in the app, Trello\cite{trello}}
 	\label{fig:trello-cards}
 \end{figure}
 Lastly, contributing to technical documentation such as the development wiki (known as ``confluence'' internally). This can also be considered as a non-technical skill because it overlaps heavily with technical communications, a critical skill required in \textit{any} industry.\\
@@ -342,6 +333,8 @@ Perforce, the version control software as mentioned before is another case of sk
 
 \subsection{Non-Technical Skills}
 
+\subsubsection{Individual}
+
 The most important non-technical skill is learning independently as supervisors or team leads might not always have time to provide all details at all times. Especially if they're often busy.\\
 \\
 One should always first read through the documentation. Often times, this action is often informally abbreviated as ``RTFM''. It is also useful to build a mental map or a physcial map of how things fit together.\\
@@ -351,14 +344,19 @@ One should use critical thinking using first-principles to sovle problems. Which
 One important skill that does not get emphasised enough (because of its simplicity) is knowing how to Google (or whichever search engine one prefers). Knowing how to find resources and information online efficiently and accurately saves times can greatly accelerate the learning process.\\
 \\
 Lastly, it is critical to be mentally healthy during work. Know when to take breaks and relief any frustration that arises during work. Induced frustration and stress often leads to decrease in productivity and cognitive functions.\\
+
+\subsubsection{Social}
+
+An important skill that every employer should have is admitting to not knowing and ask for help. Especially ask help from anyone and not limit oneself to their supervisors. By doing so, one integrates into the team environment much more proactively.\\
 \\
+In addition, it is recommended to participate in weekly meetings, known as ``stand-ups'' to review changes, designs, and progress. This is to ensure that everyone on the team is on track and necessary help is allocated when needed.\\
+
 \clearpage
 \section{Desired Future Industry}\label{desired-future-industry}
 
 This section outlines my desired future industry to expand my career as well as details about the industry. First I will explore the possible desired industries I want to work at for future work terms.
 
 \subsection{Choosing Desired Industry}
-
 This sub-section intends to provide personal reflection on possible industries in my career progression.\\
 \\
 \textbf{Depth}\\
@@ -377,52 +375,44 @@ Possible industries include electronic and hardware R\&D or design and manufactu
 \\
 The benefit of this route is that to experience new positions, gain insight and additional interests. By expanding skill set, my technical experience is not fixated on software development.\\
 \\
-For the scope of this report, I will continue to explore the computer programming / software industry because the current work term already encapsulated in the desired industry\cite{coop-handbook}. Thus we will explore two sectors:
+For the scope of this report, I will continue to explore the computer programming / software industry because the current work term alraedy aligns with the desired industry\cite{coop-handbook}. Thus we will explore two sectors:
 \begin{enumerate}
 	\item
-	      Programming in a sector with lower-level development such as robotics, controls, or firmware development. Which comprises a mix of both hardware and low level software/firmware.
+		\textbf{System Services}\cite{software-industry} encapsulates lower-level development such as robotics, controls, or firmware development. Which comprises a mix of both hardware and low level software/firmware.
 
 	\item
-	      High-level full-stack development which includes applying machine learning, web developments (MangoDB, Express, React, NodeJS (MERN) - the languages for an entire ``stack'' required to build modern applications \cite{mern})
+		\textbf{Software as a Service (SaaS)}\cite{saas} includes high-level full-stack development which includes applying machine learning, web developments (MangoDB, Express, React, NodeJS (MERN) - the languages for an entire ``stack'' required to build modern applications \cite{mern})
 \end{enumerate}
-
 \subsection{Industry History}
-The lower level programming such as firmware has been relavent since the 1960s along with increased interst in development of microprocessors. The term ``firmware'' is coined in 1967 \cite{firmware-term}. Nowadays, firmware exists from everyday products including remote-control, elevators, individual controllers that make up a bigger emerging system such as a computer system.\\
+The system services sector is most relevant during 1960s to 1980s with the rise of consumer electronics like the personal computer and home automation. The lower level programming such as firmware has been relavent since the 1960s along with increased interst in development of microprocessors. The term ``firmware'' is coined in 1967 \cite{firmware-term}. Nowadays, firmware exists from everyday products including remote-control, elevators, individual controllers that make up a bigger emerging system such as a computer system.\\
 \\
 For high level sectors, the web-development paradigms are volatile. The technlogies that power modern web applications are developed are mostly all developed after 2010s following the release of HTML5, and more powerful ECMAScript (or JavaScript), as well as web engines such as V8\cite{html5, ecmascript, v8engine}.\\
+\\
+The history machine learning is recent. Due to the recent breakthrough in GPU technlogies that allows high throughput multi-in-multi-out (MIMO) systems, machine learning is faster to train. Once trained, the machine learning models are much easier applied.\cite{gpu-ml}\\
 
 \subsection{Economic Status}
 
+The system services was once the biggest sector within the industry. Due to rise of cloud and online computing, the emerging SaaS sector has become the major sector. According to \textit{Investopedia}, the SaaS sector is projected to grow continuously for the next decade. In 2018, SaaS accounts for 30\% of the industry and over 80\% of all businesses incorporate some component of SaaS\cite{software-industry}.\\
 
 \subsection{Geographics \& Concentrations}
-% TODO:
+Due to the lack of need of localized resources, the entire computer programming / software industry is agile and globalized. The most concentration of the industry is in the United States. Developing countries such as India and China, also has large work forces.\\
 
 \subsection{Opportunities for Engineers}
-% TODO:
+Nearly all opporunities in these sector requires engineers. For system services, programmers and software engineers roles exist to write operating systems and firmwares. Hardware and networking engineers are needed as IT services. Hardware designers and electronics engineers build computer hardware such as processors and motherboards.\\
+\\
+For SaaS opportunities, software engineers develop desktop, web, and mobile applications; as well handle backend such as servers and database management.\\
 
 \subsection{Employers in the Industry}
 
-- intel
-
-- google
-- start ups
-
-(refer to first subsection)
+For system services, there are software companies such as SAP and ADP. In terms of electronics and processors, Intel, AMD, and nVidea are the major employers. For consumer electronics that also include firmware, some reputable brands include Logitech, Cisco, Samsung, LG, Apple, etc. Operating systems are dominated by Microsoft, Apple, and Google.\\
+\\
+Engineering opportunities can be found in start ups as 'full-stack' developers. A position where one would be knowledgeable to a bit of everyone on the progrmaming stack (from (possibly hardware) to low level, to high-level).
 
 \subsection{Economic Factors}
-% TODO:
-
-\begin{center}
-	This section intentionally left blank (not applicable).
-\end{center}
+This section intentionally left blank (not applicable).
 
 \subsection{Political Factors}
-% TODO:
-
-\begin{center}
-	This section intentionally left blank (not applicable).
-\end{center}
-
+This section intentionally left blank (not applicable).
 
 \clearpage
 \section{Technical \& Transferable Skills for Senior Work Terms}\label{transferable-skills}
@@ -440,12 +430,29 @@ For high level sectors, the web-development paradigms are volatile. The technlog
 % Social skills
 % - Small talks
 
-This contains the researched required advanced skill for the industry we looked up from talentegg.ca or engineerscareers.ca
+% Key skills:
+% Sound judgment
+% Analytical thinking
+% Organizational skills
+% Complex problem-solving
+
+This contains the researched required advanced skill for the industry we looked up from \textit{talentegg.ca}\cite{talentegg}.
 
 \subsection{Self-Marketable Skills Required to Succeed}
+
+After researching through varies job opportunities in the desired industry online, the common self-marketable skills that is listed on the job description is as follows.
+
 \subsubsection{Technical}
 
+For system services, a solid understanding of low level languages such as C (optionally some assembly) is required. For jobs that involves communication such as network or server engineer, fundamental knowledge of computer networking is useful.\\
+\\
+For SaaS jobs, data structures and algorithms is a must have for all programming positions.
+
 \subsubsection{Non-Technical}
+- Sound judgment
+- Analytical thinking
+- Organizational skills
+- Complex problem-solving
 
 \subsection{Plan to Obtain}
 
