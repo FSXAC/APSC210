@@ -1,26 +1,37 @@
 \documentclass[10pt,letterpaper]{article}
-\usepackage[utf8]{inputenc}
+% \documentclass[12pt,letterpaper]{article}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{hyperref}
-\usepackage{makeidx}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{svg}
-\usepackage{subcaption}
+\usepackage[english]{babel}
+\usepackage{breakurl}
+\usepackage[superscript]{cite}
 \usepackage{fancyhdr}
 \usepackage{float}
-\usepackage{tikz}
-\usepackage{nth}
-\usepackage{multicol}
-\usepackage{siunitx}
-\usepackage[default,scale=1.0]{opensans}
 \usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{nth}
+\usepackage[default,scale=1.0]{opensans}
+\usepackage{setspace}
+\usepackage{siunitx}
+\usepackage{svg}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{url}
 
 %% Preamble
 % Custom commands
 \newcommand{\ts}{\textsubscript}
+
+% Double spacing
+% \doublespacing
+
+% Use hyphans to break up urls
+\def\UrlBreaks{\do\/\do-}
 
 % Hyper ref
 \hypersetup{
@@ -59,7 +70,7 @@
 		\vfill
 		\Large{Muchen He}\\
 		\large{Associate Developer, BioWare Edmonton}\\
-		44638154\\
+		Student Number: 44638154\\
 
 		\today \\
 	\end{center}
@@ -105,7 +116,7 @@ EA or BioWare, like many other studios or publishers exist in the market right n
 
 BioWare is a game development studio founded in 1995 by three medical doctors in Edmonton, Alberta\cite{bioware-wiki}. Since the establishment, BioWare has developed numerous titles including the Mass Effect and Dragon Age franchise as well as the massive multiplier online (MMO) game Star Wars: The Old Republic. BioWare is currently developing Anthem, the upcoming game set to release in Feburary, 2019.\\
 \\
-The company is now a division of EA, which is an American video game publishing company. This allows for cross-studio sharing of technology. Such as using the Frostbite engine (game engine developed by another EA studio, DICE, in Sweden) instead of using the in-house engine BioWare developed \cite{frostbite-wiki}\cite{eadice-wiki}. In 2018, BioWare went through rebranding that replaced the logos (figure \ref{fig:biowarelogos}).\cite{bioware-wiki}\\
+The company is now a division of EA, which is an American video game publishing company. This allows for cross-studio sharing of technology. Such as using the Frostbite engine (game engine developed by another EA studio, DICE, in Sweden) instead of using the in-house engine BioWare developed \cite{frostbite-wiki, eadice-wiki}. In 2018, BioWare went through rebranding that replaced the logos (figure \ref{fig:biowarelogos}).\cite{bioware-wiki}\\
 \\
 \begin{figure}[H]
 	\centering
@@ -133,7 +144,7 @@ The company is now a division of EA, which is an American video game publishing 
 
 There is a pipeline of games the studio outputs, the latest one being Anthem, showcased at the Electronic Entertainment Expo (E3) in 2017 and 2018. The game so far has won many E3 awards.\\
 \\
-To date, there are 800 active employees working at BioWare ranging from artists to programmers. My position is an associate developer on the UI/UX team for the game Anthem. Mostly developing engine tools, and elements the scriptwriters and artists can then use to add feature into the game. \\
+To date, there are 800 active employees working at BioWare ranging from artists to programmers \cite{bioware-wiki}. My position is an associate developer on the UI/UX team for the game Anthem. Mostly developing engine tools, and elements the scriptwriters and artists can then use to add feature into the game.\\
 
 \clearpage
 \section{Work Term Industry}\label{work-term-industry}
@@ -146,24 +157,24 @@ We will also examine the video game industry in depth because of its relevance a
 
 The software industry primary focuses on developing computer programs as service (SaaS) or product that started in the 1950s. Recently, open source solutions and internet of things (IoT) are popular.\cite{software-industry}\\
 \\
-The history of video game industry started in the 1970s when computers are powerful enough to run games even though videos exisited since the 40s. Recently, the video game industry has expanded to many platforms including social media, mobile, argumented reality (AR) and virtual reality (VR).\cite{video-game-industry-wiki}\cite{video-game-industry-stats}\\
+The history of video game industry started in the 1970s when computers are powerful enough to run games even though videos exisited since the 40s. Recently, the video game industry has expanded to many platforms including social media, mobile, argumented reality (AR) and virtual reality (VR).\cite{video-game-industry-wiki, video-game-industry-stats}\\
 
 \subsection{Economic Status}
 
-The video game industry economic status is growing as 
+The video game industry economic status is growing as
 
 Earlier games in the industry are generally cheap inexpensive to make because of small teams and low demand for quality from the consumers. In recent decades however, large budget games (A.K.A AAA or Triple A games) consists of large development teams and usually takes  a year to three yeear to develop a single game. This is due to increased technological complexity.\cite{cost-game}\\
 \\
-In 2017, the video game industry was valued at 17.68 billion USD. \cite{video-game-industry-stats}.\\
+In 2017, the video game industry was valued at 17.68 billion USD\cite{video-game-industry-stats}.\\
 \\
-One competitor in the industry, Rockstar, and their most recent products Grand Theft Auto V (GTA 5) has become the most profitable product in the industry \cite{IGN-gta5}. With a total revenue of \$6 billion, it has made "more money than any film, book, or game".\\
+One competitor in the industry, Rockstar, and their most recent products Grand Theft Auto V (GTA 5) has become the most profitable product in the industry \cite{ign-gta5}. With a total revenue of \$6 billion, it has made "more money than any film, book, or game".\\
 \\
-EA's earnings is as show below (figure \ref{fig:ea-revenue})\cite{ea-earnings}. As shown, there is an increasing amount of income from ``Live Serivces''. This includes the after-sale content such as downloadable contents (DLCs) and micro-transactions (MTX) within the published games. Due to its financial appeal, Anthem will follow the same \textit{live services} model. The game will feature purchaseable cosmetic items  and will not have ``lootboxes'' (more details in economic factors section).\\
+EA's earnings is as show below (figure \ref{fig:ea-revenue}). As shown, there is an increasing amount of income from ``Live Serivces''. This includes the after-sale content such as downloadable contents (DLCs) and micro-transactions (MTX) within the published games. Due to its financial appeal, Anthem will follow the same \textit{live services} model. The game will feature purchaseable cosmetic items  and will not have ``lootboxes'' (more details in economic factors section) \cite{ea-earnings}.\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{assets/ea-revenue}
-	\caption{EA Earnings by Type}
+	\caption{EA Digital Net Earnings by Type\cite{ea-earnings}}
 	\label{fig:ea-revenue}
 \end{figure}
 
@@ -173,18 +184,18 @@ The software industry is global. Industry leaders are based in USA. Because one 
 \\
 The video game industry also applies worldwide. The USA is one of the largest producer of video games, most companies and publishers including Electronic Arts, Blizzard - Activision, and Valve (they own the world's largest online video game distribution platform - Steam \cite{steam}).\\
 \\
-The largest market is China, with MMO games on PC being the largest category \cite{video-game-china}\cite{big-game-china}.
+The largest market is China, with MMO games on PC being the largest category \cite{video-game-china, big-game-china}.
 
 \subsection{Opportunities for Engineers}
 
-For the video game industry, even though the products are viewed as entertainment or arts by the public, there are still many critical roles for engineers. According to Carlos Guerrero, a senior producer at EA, who had worked on games including World of Warcraft (WoW) and Overwatch, there are many technologies that goes into a game that need to be developed and maintained.\\
+For the video game industry, even though the products are viewed as entertainment or arts by the public, there are still many critical roles for engineers. According to Carlos Guerrero, a senior producer at EA, who had worked on games including World of Warcraft (WoW) and Overwatch, there are many technologies that goes into a game that need to be developed and maintained.\cite{intern-speaker}\\
 \\
 The following chart depicts various roles that goes into making a game (figure \ref{fig:video-game-as-career}). In fact, the engineers make up a critical part: from video game engine development to online system infrastructure.\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{assets/video-games-career-roles}
-	\caption{Video game as career}
+	\caption{Video game as career\cite{intern-speaker}}
 	\label{fig:video-game-as-career}
 \end{figure}
 
@@ -195,14 +206,50 @@ For computer programming / software industry, the most notable industries includ
 In the scope of the video game industry, EA is one of the biggest publisher in North America which owns subsidiaries including BioWare and DICE.\\
 \\
 Another large video game publisher is from the giant Tencent, a Chinese internet company. They own Riot, a studio that developed League of Legends (LoL) which has 27 million players daily and an E-sports scene with over 11 million viewership.\cite{lol-wiki}\\
+\\
+In terms of the overall quality of the games produces, EA ranks number one globally in 2017 \cite{game-publishers-metacritic}. Refer to table \ref{table:metacritic-ranking} for other game publishers in the industry. In terms of total revenue, EA ranks 6th, at 3.25 billion euros in 2015\cite{game-publishers-revenue}. Refer to table \ref{table:revenue-ranking} for ranked reveue of other major publishers.\\
+\\
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ |c|c|c| }
+		\hline
+		\textbf{Rank} & \textbf{Publisher} & \textbf{Score} \\
+		\hline
+		1             & Elecronic Arts     & 298.2          \\
+		2             & Square Enix        & 285.0          \\
+		3             & Nintendo           & 272.8          \\
+		4             & Sony               & 254.8          \\
+		$\vdots$      & $\vdots$           & $\vdots$       \\
+	\end{tabular}
+	\caption{Major game publishers ranked by sum of weighted critic scores of published games\cite{game-publishers-metacritic}}
+	\label{table:metacritic-ranking}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ |c|c|c| }
+		\hline
+		\textbf{Rank} & \textbf{Publisher} & \textbf{Revenue (billion euros)} \\
+		\hline
+		1             & Sony               & 9.89                             \\
+		2             & Tencent            & 7.73                             \\
+		3             & Microsoft          & 7.25                             \\
+		4             & Nintendo           & 3.92                             \\
+		5             & Activison Blizzard & 3.32                             \\
+		6             & Electronic Arts    & 3.25                             \\
+		$\vdots$      & $\vdots$           & $\vdots$                         \\
+	\end{tabular}
+	\caption{Major game publishers ranked by revenue\cite{game-publishers-revenue}}
+	\label{table:revenue-ranking}
+\end{table}
+
+Note that Sony, Microsoft, and Nintendo has much higher revenue because these publishers also develop and sell game console systems (hardware), whereas other game studios only focus on the software. It's also worth noting that Tencent and Activision Blizzard has owns a large market in China with Tecent dominating all of China (being a Chinese internet tech-giant company)\cite{tencent-wiki}.\\
 
 \subsection{Economic Factors}
 
-% TODO:
-
-\begin{center}
-	This section intentionally left blank (not applicable).
-\end{center}
+This section is intentionally left blank (not applicable).
 
 % The computer programming / software industry has been in high demand for decades. It has evolved 
 
@@ -210,9 +257,7 @@ Another large video game publisher is from the giant Tencent, a Chinese internet
 
 \subsection{Political Factors}
 
-\begin{center}
-	This section intentionally left blank (not applicable).
-\end{center}
+Unless Hillary Clinton's reference on ``\textit{Pokemon Go} to the polls" reference count as political influence\cite{pokemon-go}, this is section intentionally left blank (not applicable).
 
 % - Video game addiction in Asian countries
 % - Video game esports influence in SKorea
@@ -220,37 +265,28 @@ Another large video game publisher is from the giant Tencent, a Chinese internet
 \clearpage
 \section{Obtained Skills}\label{obtained-skills}
 
-% BEGIN of unorganized
 This section provides an overview of my technical and non-technical skills gained at BioWare over the course of the work term. \\
-\\
-Social skills:
-- Asking for help from anyone in the office
-- Participating in design review
-
-% END of unorganized
 
 \subsection{Technical Skills}
 
-Being in a technical co-op position, the primary skills are comprised of technical skills in software development. The technical skills can be broken down into: fundamental and development workflow skills, programming skills,, and skills invoving specific toolsets.\\
+Being in a technical co-op position, the primary skills are comprised of technical skills in software development. The technical skills can be broken down into: fundamental and development workflow skills, programming skills, and skills invoving specific toolsets.\\
 
 \subsubsection{Fundamental \& Development Skills}
 
 The first category of skills involves fundamentally useful abilities in a development studio.\\
 \\
 To succeed in this position, one should be proficient in understanding and using version control solutions such as Git (most common) or Perforce (used in enterprise such as Google and EA). Version control is especially important as there are tens or hundreds of developers working on the same project or codebase. It is not uncommon that multiple files undergo ``conflict'' as the same file could be worked on by multiple developers. Therefore explicit version tracking and tools are vital to the workflow.\\
-\begin{quote}
-	\textit{
-It is worth noting that since everyone is working off of the same depot that contains the source code and game data, if one were to break the build, everyone would be affected resulting in many work hours lost.
-	}
-\end{quote}
-
+\\
+It is worth noting that since everyone is working off of the same depot that contains the source code and game data, if one were to break the build, everyone would be affected resulting in many work hours lost.\\
+\\
 One should also be comfortable working with packages and modules (along with its associated package managers) since this makes the project more modular and encourages code reuse (for other licensees). Because of the modularity, one must make no assumptions about how future developers will use this code. Thus, it is important to test extensively, check errors, validate interfaces, and cover edge cases.\\
 \\
-Moreover, familiarity with agile methodologies is useful in software development environment. Specific actions include code review, time management, and task management with cards (known as ``JIRA'' for EA internals). Each card contains a specific task and is assigned to each person. The card is placed in the person's backlog, and is moved once the task on the card is done.\\
+Moreover, familiarity with agile methodologies is useful in software development environment. Specific actions include code review, time management, and task management with cards (known as ``JIRA'' for EA internals). Each card contains a specific task and is assigned to each person. The card is placed in the person's backlog, and is moved once the task on the card is done\cite{agile}.\\
+\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\textwidth]{assets/cards}
-	\caption{Cards used in agile methodologies here is depitcted in the app, Trello}
+	\caption{Cards used in agile methodologies here is depitcted in the app, Trello\cite{trello}}
 	\label{fig:trello-cards}
 \end{figure}
 Lastly, contributing to technical documentation such as the development wiki (known as ``confluence'' internally). This can also be considered as a non-technical skill because it overlaps heavily with technical communications, a critical skill required in \textit{any} industry.\\
@@ -263,8 +299,22 @@ Of course, knowledge of any progamming language including C or Python helps too 
 \\
 At my position at EA, C++ is the logic behind everything in the game. C\# is another programming language that is used widely in UI; it is also the most popular language in amateur game makers as it is used in the free game engine, Unity. We write in C\# for the tools and editors the artists and designers use to make other game content, but ultimately they are ``compiled" into C++. Finally, we write Python scripts to modify game content and assets in bulk.\\
 \\
-In addition to the specific programming languages, it is also nice to be familair with software concepts such as object oriented programming (OOP), UI/UX design patterns, multithreading to separte rendering and simulation, etc. More details will be in the next report (technial report for APSC 310).\\
-\\
+In addition to the specific programming languages, it is also nice to be familair with software concepts such as object oriented programming (OOP) (simplified and depicted in figure \ref{fig:oopp}), UI/UX design patterns (as shown in figure \ref{fig:ooppui}), multithreading to separte rendering and simulation, etc. More details will be in the next report (technial report for APSC 310).\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.45\textwidth]{assets/oopp}
+	\caption{Object-Oriented Programming Paradigm that shows Polymorphism and Inheritance\cite{oopp}}
+	\label{fig:oopp}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{assets/ooppui}
+	\caption{Object-Oriented Modeling of User Interface (UI) Design\cite{oopp}}
+	\label{fig:ooppui}
+\end{figure}
+
 Debugging skills and techniques are equally important. The most important skill is to create a conceptual map in mind of where the problem lies, how much or where it is affecting, and where it is coming from by eliminating possibilities. Other techniques include attaching IDE to processes and threads, setting breakpoints and analysing variables in the debugger.\\
 \\
 Lastly, though it is obvious, it is important to keep in mind that future developers will likely see and use code we write. Writing code that complies with the coding standard, in terms of style of syntax and adding code comments and tags is beneficial.
@@ -279,31 +329,38 @@ For instance, the developers use an engine editor called \textit{FrostEd} to mak
 \\
 \textit{FrostEd} is a visual script editor and outputs game assets and schematics used to put together the game. As such, each asset contains references to data, logic, entities, and more. Understanding what was going on underneth these files has helped me greatly in understanding how the editor serializes the assets, and helped me working with the tool and more intuitive in debugging.\\
 \\
-Perforce, the version control software as mentioned before is another case of skills in specific tools. This is because other companies may employ different version control software such as \texttt{git}.\\
+Perforce, the version control software as mentioned before is another case of skills in specific tools\cite{perforce}. Other companies may employ different version control software such as \texttt{git}\cite{git}.\\
 
 \subsection{Non-Technical Skills}
 
+\subsubsection{Individual}
+
 The most important non-technical skill is learning independently as supervisors or team leads might not always have time to provide all details at all times. Especially if they're often busy.\\
 \\
-One should always first read through the documentation. Often times, this action is often informally abbreviated as ``RTFM'' which stands for ``Read The F-ing Manual!''. It is also useful to build a mental map or a physcial map of how things fit together.\\
+One should always first read through the documentation. Often times, this action is often informally abbreviated as ``RTFM''. It is also useful to build a mental map or a physcial map of how things fit together.\\
 \\
 One should use critical thinking using first-principles to sovle problems. Which implies only thinking about what is absolutely true, then progress to what could have happened, then verify the hypothesis and repeat.\\
 \\
 One important skill that does not get emphasised enough (because of its simplicity) is knowing how to Google (or whichever search engine one prefers). Knowing how to find resources and information online efficiently and accurately saves times can greatly accelerate the learning process.\\
 \\
 Lastly, it is critical to be mentally healthy during work. Know when to take breaks and relief any frustration that arises during work. Induced frustration and stress often leads to decrease in productivity and cognitive functions.\\
+
+\subsubsection{Social}
+
+An important skill that every employer should have is admitting to not knowing and ask for help. Especially ask help from anyone and not limit oneself to their supervisors. By doing so, one integrates into the team environment much more proactively.\\
 \\
+In addition, it is recommended to participate in weekly meetings, known as ``stand-ups'' to review changes, designs, and progress. This is to ensure that everyone on the team is on track and necessary help is allocated when needed.\\
+
 \clearpage
 \section{Desired Future Industry}\label{desired-future-industry}
 
 This section outlines my desired future industry to expand my career as well as details about the industry. First I will explore the possible desired industries I want to work at for future work terms.
 
 \subsection{Choosing Desired Industry}
-
 This sub-section intends to provide personal reflection on possible industries in my career progression.\\
-
+\\
 \textbf{Depth}\\
-I have two choices in mind. The first is software development or computer programming industry. This encourages depth as I already have a few work-terms worth of experiences. Choosing said industry also implies more work on in the UI/UX or app development (relatively front end and higher level) for its high demand. It could be a viable option that consolidates existing technical skills.\\
+I have two choices in mind. The first is software development or computer programming industry. This encourages depth as I already have a few work-terms worth of experiences. Choosing said industry also implies more work on in the UI/UX or app development (relatively front end and higher level) for its high demand. It could be a viable option that consolidates existing technical skills.\cite{naics}\\
 \\
 Possible specific industries include software development (for companies such as Microsoft, Amazon, and start-ups) and video game industry (such as coming back to Electronic Arts or explore other game publishers).\\
 \\
@@ -312,22 +369,50 @@ The benefit of choosing software industry is that I already possess many skills 
 The trade off being that my existing skills in this specific area, which consist of programming in C++, UI/UX and app development, will snowball. As a result, it will be more likely that my future positions be software developer. The career inertia could potentially make it more difficult to enter into  other industries in case of career change.\\
 \\
 \textbf{Breadth}\\
-The second option is to explore industries that differs from pure high-level software development. Industries that could potentially be more related to the my study in electrical engineering. Such as to apply knowledge practiced in courses such as operating and designing electronics or PCBs, mechanical components, apply theories such as controls theory in hardware projects or robotics. The intent would be to try other tasks to expand my set of skills into positions of different industries.\\
+The second option is to explore industries that differs from pure high-level software development. Industries that could potentially be more related to the my study in electrical engineering. Such as to apply knowledge practiced in courses such as operating and designing electronics or PCBs, mechanical components, apply theories such as controls theory in hardware projects or robotics. The intent would be to try other tasks to expand my set of skills into positions of different industries.\cite{naics}\\
 \\
-Possible industries include electronic and hardware R\&D or design and manufacturing. There are serveral companies that fall under this industry: Intel and Altera for hardware development such as field programmable gate array (FPGA) which are technlogies explored in CPEN courses. Tesla for electric and battery engineering. DJI for drone and robotic applications.\\
+Possible industries include electronic and hardware R\&D or design and manufacturing. There are serveral companies that fall under this industry: Intel and Altera for hardware development such as field programmable gate array (FPGA) which are technlogies explored in CPEN courses. Tesla for electric and battery engineering. DJI for drone develop or other robotic applications.\\
 \\
 The benefit of this route is that to experience new positions, gain insight and additional interests. By expanding skill set, my technical experience is not fixated on software development.\\
 \\
-For the scope of this report, I will explore the latter industry for a mix of both hardware and low level software/firmware. This falls under the sector outlined on the Co-op handboox\cite{coop-handbook} manufacturing and services sectors; namely ``Computer/Electrical/Electronic Machinary/Equipment" and ``Computer Related Services/Hardware".\\
-\\
+For the scope of this report, I will continue to explore the computer programming / software industry because the current work term alraedy aligns with the desired industry\cite{coop-handbook}. Thus we will explore two sectors:
+\begin{enumerate}
+	\item
+		\textbf{System Services}\cite{software-industry} encapsulates lower-level development such as robotics, controls, or firmware development. Which comprises a mix of both hardware and low level software/firmware.
+
+	\item
+		\textbf{Software as a Service (SaaS)}\cite{saas} includes high-level full-stack development which includes applying machine learning, web developments (MangoDB, Express, React, NodeJS (MERN) - the languages for an entire ``stack'' required to build modern applications \cite{mern})
+\end{enumerate}
 \subsection{Industry History}
+The system services sector is most relevant during 1960s to 1980s with the rise of consumer electronics like the personal computer and home automation. The lower level programming such as firmware has been relavent since the 1960s along with increased interst in development of microprocessors. The term ``firmware'' is coined in 1967 \cite{firmware-term}. Nowadays, firmware exists from everyday products including remote-control, elevators, individual controllers that make up a bigger emerging system such as a computer system.\\
+\\
+For high level sectors, the web-development paradigms are volatile. The technlogies that power modern web applications are developed are mostly all developed after 2010s following the release of HTML5, and more powerful ECMAScript (or JavaScript), as well as web engines such as V8\cite{html5, ecmascript, v8engine}.\\
+\\
+The history machine learning is recent. Due to the recent breakthrough in GPU technlogies that allows high throughput multi-in-multi-out (MIMO) systems, machine learning is faster to train. Once trained, the machine learning models are much easier applied.\cite{gpu-ml}\\
 
 \subsection{Economic Status}
+
+The system services was once the biggest sector within the industry. Due to rise of cloud and online computing, the emerging SaaS sector has become the major sector. According to \textit{Investopedia}, the SaaS sector is projected to grow continuously for the next decade. In 2018, SaaS accounts for 30\% of the industry and over 80\% of all businesses incorporate some component of SaaS\cite{software-industry}.\\
+
 \subsection{Geographics \& Concentrations}
+Due to the lack of need of localized resources, the entire computer programming / software industry is agile and globalized. The most concentration of the industry is in the United States. Developing countries such as India and China, also has large work forces.\\
+
 \subsection{Opportunities for Engineers}
+Nearly all opporunities in these sector requires engineers. For system services, programmers and software engineers roles exist to write operating systems and firmwares. Hardware and networking engineers are needed as IT services. Hardware designers and electronics engineers build computer hardware such as processors and motherboards.\\
+\\
+For SaaS opportunities, software engineers develop desktop, web, and mobile applications; as well handle backend such as servers and database management.\\
+
 \subsection{Employers in the Industry}
+
+For system services, there are software companies such as SAP and ADP. In terms of electronics and processors, Intel, AMD, and nVidea are the major employers. For consumer electronics that also include firmware, some reputable brands include Logitech, Cisco, Samsung, LG, Apple, etc. Operating systems are dominated by Microsoft, Apple, and Google.\\
+\\
+Engineering opportunities can be found in start ups as 'full-stack' developers. A position where one would be knowledgeable to a bit of everyone on the progrmaming stack (from (possibly hardware) to low level, to high-level).
+
 \subsection{Economic Factors}
+This section intentionally left blank (not applicable).
+
 \subsection{Political Factors}
+This section intentionally left blank (not applicable).
 
 \clearpage
 \section{Technical \& Transferable Skills for Senior Work Terms}\label{transferable-skills}
@@ -345,12 +430,29 @@ For the scope of this report, I will explore the latter industry for a mix of bo
 % Social skills
 % - Small talks
 
-This contains the researched required advanced skill for the industry we looked up from talentegg.ca or engineerscareers.ca
+% Key skills:
+% Sound judgment
+% Analytical thinking
+% Organizational skills
+% Complex problem-solving
+
+This contains the researched required advanced skill for the industry we looked up from \textit{talentegg.ca}\cite{talentegg}.
 
 \subsection{Self-Marketable Skills Required to Succeed}
+
+After researching through varies job opportunities in the desired industry online, the common self-marketable skills that is listed on the job description is as follows.
+
 \subsubsection{Technical}
 
+For system services, a solid understanding of low level languages such as C (optionally some assembly) is required. For jobs that involves communication such as network or server engineer, fundamental knowledge of computer networking is useful.\\
+\\
+For SaaS jobs, data structures and algorithms is a must have for all programming positions.
+
 \subsubsection{Non-Technical}
+- Sound judgment
+- Analytical thinking
+- Organizational skills
+- Complex problem-solving
 
 \subsection{Plan to Obtain}
 
@@ -367,68 +469,16 @@ This contains the researched required advanced skill for the industry we looked 
 - hackathons
 
 \clearpage
-\section*{Conclusion}\label{conclusion}
 \addcontentsline{toc}{section}{Conclusion}
+\section*{Conclusion}\label{conclusion}
 
 Possible strategies I will implement to assist me 
 
 Recap the major points covered throughout the report.\\
 
 \clearpage
-\begin{thebibliography}{}
-	% Bibliography
-	
-	\bibitem{IGN-gta5}
-	Arif, S. (2018, April 9). GTA 5 Has Made More Money Than Any Film, Book, or Game, Says Analyst. Retrieved May 10, 2018, from http://ca.ign.com/articles/2018/04/09/gta-5-has-made-more-money-than-any-film-book-or-game-says-analyst
-
-	\bibitem{bioware}
-	BioWare | Rich Stories, Unforgettable Characters, And Vast Worlds. (2018). Retrieved May 23, 2018, from http://www.bioware.com/en/
-
-	\bibitem{bioware-wiki}
-	BioWare. (2018, May 23). Retrieved May 23, 2018, from https://en.wikipedia.org/wiki/BioWare
-
-	\bibitem{frostbite-wiki}
-	Frostbite (game engine). (2018). Retrieved June 27, 2018, from https://en.wikipedia.org/wiki/Frostbite\_(game\_engine)
-
-	\bibitem{eadice-wiki}
-	EA DICE. (2018). Retrieved June 27, 2018, from https://en.wikipedia.org/wiki/EA\_DICE
-
-	\bibitem{ea-earnings}
-	EA. (Jan 30, 2018). Electronic Arts Reports Q3 FY18 Financial Results. Retrieved July 5, 2018, from http://news.ea.com/press-release/company-news/electronic-arts-reports-q3-fy18-financial-results
-
-	\bibitem{lol-wiki}
-	League of Legends. (2018). Retrieved July 3, 2018, from https://en.wikipedia.org/wiki/League\_of\_Legends.
-
-	\bibitem{bioware-wiki-list}
-	List of BioWare video games. (2018, May 22). Retrieved May 23, 2018, from https://en.wikipedia.org/wiki/List\_of\_BioWare\_video\_games
-
-	\bibitem{software-industry}
-	McDonald, TK. (2016, May 6). The Industry Handbook: Software Industry. Retrieved July 3, 2018, from https://www.investopedia.com/articles/markets/050416/industry-handbook-software-industry.asp
-
-	\bibitem{VG247-bf5}
-	Nunneley, S. (2018, May 8). Battlefield 5 will feature "unique battles" and new challenges, Anthem to be designed around player input. VG247. Retrieved May 8, 2018, from https://www.vg247.com/2018/05/08/battlefield-5-unique-battles-challenges-anthem/
-
-	\bibitem{steam}
-	Steam, The Ultimate Online Game Platform. (2018). Retrieved June 27, 2018, from https://store.steampowered.com/about/
-
-	\bibitem{cost-game}
-	Superannuation. (2014, Jan 15). How Much Does It Cost To Make A Big Video Game?. Kotaku. Retrieved June 27, 2018, from https://kotaku.com/how-much-does-it-cost-to-make-a-big-video-game-1501413649
-
-	\bibitem{video-game-industry-wiki}
-	Video Game Industry. (2018, June 24). Retrieved June 24. 2018, from https://en.wikipedia.org/wiki/Video\_game\_industry
-
-	\bibitem{video-game-industry-stats}
-	Video Game Industry - Statistics \& Facts. (2018, June 27). Retrieved June 27, 2018, from https://www.statista.com/topics/868/video-games/
-
-	\bibitem{video-game-china}
-	Video gaming in China (2018). Retrieved June 27, 2018, from https://en.wikipedia.org/wiki/Video\_gaming\_in\_China
-
-	\bibitem{big-game-china}
-	Ye, J. (2018, Jan 8). How big is China's gaming industry?. Retrieved June 27, 2018, from https://www.scmp.com/video/business/2127327/how-big-chinas-gaming-industry
-
-	\bibitem{EA-intern-conf-2}
-	Some guest speaker <todo>
-
-\end{thebibliography}
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{ieeetr}
+\bibliography{references}
 
 \end{document}
