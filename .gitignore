@@ -242,3 +242,4 @@ TSWLatexianTemp*
 *.spl
 /report.synctex.gz
 /report.pdf
+.DS_Store
